@@ -33,4 +33,4 @@ fvm install
 
 ## Video
 
-[!Watch the demo(![demo vid](https://github.com/Nathan4pg/weight-tracker-flutter-app/blob/main/demo-screenshot.png?raw=true))](https://drive.google.com/file/d/1cE8MuJNA5snDzACeatyhXpEKr5k_VDBF/view?usp=sharing)
+[Watch the demo![demo vid](https://github.com/Nathan4pg/weight-tracker-flutter-app/blob/main/demo-screenshot.png?raw=true)](https://drive.google.com/file/d/1cE8MuJNA5snDzACeatyhXpEKr5k_VDBF/view?usp=sharing)
