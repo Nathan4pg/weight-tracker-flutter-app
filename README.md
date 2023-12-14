@@ -30,3 +30,7 @@ fvm install
 - Signing out and signing back in will generate a new user every time.
 - If you don't sign out, you can continue using the same authenticated user, even if you reload or close and reopen the app.
 - On reload or closing/reopening the app, firebase will check if the user is still authenticated. If they are, it will update the provider and therefore the child widgets with the user info.
+
+## Video
+
+[!Watch the demo(![demo vid](https://github.com/Nathan4pg/weight-tracker-flutter-app/blob/main/demo-screenshot.png?raw=true))](https://drive.google.com/file/d/1cE8MuJNA5snDzACeatyhXpEKr5k_VDBF/view?usp=sharing)
