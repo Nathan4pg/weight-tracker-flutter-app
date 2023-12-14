@@ -23,3 +23,10 @@ fvm install
 ```
 
 <span style="color: red; font-weight: bold; text-decoration: underline">NOTE:</span> This means that `flutter run` is replaced with `fvm flutter run`. All other `flutter _____` commands should be `fvm flutter ____` as well. For more info check out [the fvm documentation](https://fvm.app/docs/getting_started/overview)
+
+## Things to Note With Authentication
+
+- The user auth is Firebase anonymous auth
+- Signing out and signing back in will generate a new user every time.
+- If you don't sign out, you can continue using the same authenticated user, even if you reload or close and reopen the app.
+- On reload or closing/reopening the app, firebase will check if the user is still authenticated. If they are, it will update the provider and therefore the child widgets with the user info.
