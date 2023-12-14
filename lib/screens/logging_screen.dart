@@ -114,6 +114,10 @@ class _LoggingScreenState extends State<LoggingScreen> {
       ),
       appBar: AppBar(
         automaticallyImplyLeading: false,
+        leading: const SizedBox(width: 0),
+        leadingWidth: 0,
+        titleSpacing: 15,
+        centerTitle: false,
         title: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -131,7 +135,7 @@ class _LoggingScreenState extends State<LoggingScreen> {
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         actions: [
           Padding(
-            padding: const EdgeInsets.only(right: 12),
+            padding: const EdgeInsets.only(right: 15),
             child: OutlinedButton(
               style: ButtonStyle(
                 side: MaterialStatePropertyAll(

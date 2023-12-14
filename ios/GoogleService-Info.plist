@@ -3,17 +3,17 @@
 <plist version="1.0">
 <dict>
 	<key>API_KEY</key>
-	<string>AIzaSyDKVkg5w_8VawOaNBJFVfH8nNMQuQWLSN0</string>
+	<string>AIzaSyBQEhFVF4a7I-NBPF5ZIIe7ZspUVKWxNsg</string>
 	<key>GCM_SENDER_ID</key>
-	<string>1016200102288</string>
+	<string>584796488395</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>com.example.weightTracker</string>
 	<key>PROJECT_ID</key>
-	<string>weight-tracker-4a94d</string>
+	<string>weight-tracker-90f93</string>
 	<key>STORAGE_BUCKET</key>
-	<string>weight-tracker-4a94d.appspot.com</string>
+	<string>weight-tracker-90f93.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -25,6 +25,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:1016200102288:ios:415f29069aea3e630d7315</string>
+	<string>1:584796488395:ios:09fda864ab34d5f582d14e</string>
 </dict>
 </plist>
