@@ -1,6 +1,12 @@
 # weight_tracker
 
-A new Flutter project.
+A simple weight tracking app using firebase anonymous auth for login and firestore as a db.
+
+## Prerequisites
+
+- CocoaPods 1.13.0 or higher
+- Dart 3.2.3 or higher (installed via Flutter 3.16.3 or higher)
+- FVM (see Getting Started)
 
 ## Getting Started
 
