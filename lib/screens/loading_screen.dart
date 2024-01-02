@@ -45,33 +45,31 @@ class _LoadingScreenState extends State<LoadingScreen>
   void checkCurrentUser() async {
     User? currentUser = FirebaseAuth.instance.currentUser;
 
-    if (currentUser != null) {
-      try {
-        await currentUser.reload();
-        currentUser = FirebaseAuth.instance.currentUser;
+    if (currentUser == null) {
+      return setState(() {
+        shouldNavigateToSignIn = true;
+      });
+    }
 
-        if (!mounted) return;
+    try {
+      await currentUser.reload();
+      currentUser = FirebaseAuth.instance.currentUser;
 
-        if (currentUser != null) {
-          final userProvider =
-              Provider.of<UserProvider>(context, listen: false);
+      if (!mounted) return;
 
-          userProvider.updateUser(currentUser);
-
-          setState(() {
-            shouldNavigateToWeightTracker = true;
-          });
-        } else {
-          setState(() {
-            shouldNavigateToSignIn = true;
-          });
-        }
-      } catch (e) {
-        setState(() {
+      if (currentUser == null) {
+        return setState(() {
           shouldNavigateToSignIn = true;
         });
       }
-    } else {
+
+      final userProvider = Provider.of<UserProvider>(context, listen: false);
+      userProvider.updateUser(currentUser);
+
+      return setState(() {
+        shouldNavigateToWeightTracker = true;
+      });
+    } catch (e) {
       setState(() {
         shouldNavigateToSignIn = true;
       });
