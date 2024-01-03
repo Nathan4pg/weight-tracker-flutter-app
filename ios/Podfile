@@ -1,6 +1,15 @@
 # Uncomment this line to define a global platform for your project
 platform :ios, '12.0'
-pod 'CocoaPods', '>= 1.13.0'
+
+# Podfile
+pre_install do |installer|
+  required_version = Gem::Version.new('1.13.0')
+  current_version = Gem::Version.new(Pod::VERSION)
+  if current_version < required_version
+    raise "[Error] Your CocoaPods version is #{current_version}. Please update to CocoaPods version #{required_version} or higher."
+  end
+end
+
 
 # CocoaPods analytics sends network stats synchronously affecting flutter build latency.
 ENV['COCOAPODS_DISABLE_STATS'] = 'true'
